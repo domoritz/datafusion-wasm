@@ -12,8 +12,8 @@ categories = ["wasm"]
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-datafusion = { version = "3.0.0", features = [] }
-arrow = { version = "3.0.0" }
+datafusion = { git = "https://github.com/apache/arrow", features = [] }
+arrow = { git = "https://github.com/apache/arrow" }
 wasm-bindgen = { version = "0.2" }
 wasm-bindgen-futures = { version = "0.2" }
 

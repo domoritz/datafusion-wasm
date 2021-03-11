@@ -22,7 +22,7 @@ pub async fn main(contents: Vec<u8>) -> Result<(), JsValue> {
     };
 
     let table = Arc::new(MemTable::try_new(schema, vec![record_batches]).unwrap());
-    
+
     let mut ctx = ExecutionContext::new();
 
     let df = ctx.read_table(table).unwrap();
